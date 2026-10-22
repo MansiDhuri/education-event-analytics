@@ -1,8 +1,8 @@
-# Education Event Registration: Data Quality & Analytics
+# 📊 Education Event Registration: Data Quality & Analytics
 
 Personal project built on simulated data. It is inspired by a registration-management workflow I handled in a previous role, where verification was done by manually using Excel, Google Sheets, HubSpot and Cvent. No real company, delegate or institution data is used anywhere in this repository.
 
-## Business problem
+## 🎯 Business problem
 
 An education-services organisation runs regional events for school and university leaders around the world. Delegates register through two forms:
 
@@ -10,7 +10,7 @@ An education-services organisation runs regional events for school and universit
 -- a Cvent form for universities (paid entry)
 The incoming data is messy: misspelled institution names, institutions that do not exist, invalid emails and phone numbers, inconsistent country names, and people who register more than once. Before confirmation emails go out, each registration has to be cleaned and verified. At my previous employer this was manual work.
 
-## What this project does
+## 🏢 What this project does
 
 I rebuilt that workflow with SQL Server (T-SQL) and Power BI to show how it can be automated, measured and reported:
 
