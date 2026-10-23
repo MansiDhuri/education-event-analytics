@@ -28,9 +28,12 @@ raw_registrations  ->  stg_registrations  ->  registrations_validated  ->  star 
 
 ## Tech stack
 
-Area	       Tools
-Database	   SQL Server 2025 Express, T-SQL, SSMS
-Reporting	   Power BI Desktop, DAX
+| Area | Tools |
+|---|---|
+| Database | SQL Server 2025 Express, T-SQL, SSMS |
+| Reporting | Power BI Desktop, DAX |
+| Scripting | Python (data generation and the optional AI review step) |
+| AI step (optional) | Claude API, with output validation and human approval |
 
 ## Dataset (simulated)
 
