@@ -23,10 +23,6 @@ I rebuilt that workflow with SQL Server (T-SQL) and Power BI to show how it can 
 - Classifies every registration as Verified, Needs Review or Rejected, with a stated reason.
 - Models the result as a star schema and reports on it in a 5-page Power BI dashboard.
 
-raw_registrations  ->  stg_registrations  ->  registrations_validated  ->  star schema  ->  Power BI
-   (untouched)          (standardised)         (matched, validated,       (1 fact +          (5 pages)
-                                                deduplicated, status)      6 dimensions)
-
 ## 💻 Tech stack
 
 | Area | Tools |
