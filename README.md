@@ -83,6 +83,11 @@ Five pages: Executive overview, Data quality, Geography, Trends and Operations. 
 
 Executive overview Data quality Geography Trends Operations
 
+### 1. Education Event Overview
+
+!<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/958d798c-e399-43c3-bd1c-6f1ee9225f1b" />
+
+
 ## 💡Key results
 
 These figures come from the simulated dataset, so they describe how the data was generated, not a real organisation.
