@@ -84,9 +84,19 @@ Five pages: Executive overview, Data quality, Geography, Trends and Operations. 
 Executive overview Data quality Geography Trends Operations
 
 ### 1. Education Event Overview
+<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/958d798c-e399-43c3-bd1c-6f1ee9225f1b" />
 
-!<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/958d798c-e399-43c3-bd1c-6f1ee9225f1b" />
+### 2. Data Quality
+<img width="940" height="469" alt="image" src="https://github.com/user-attachments/assets/660cb661-1a8c-416c-bf17-601d8b714ceb" />
 
+### 3. Geography
+<img width="940" height="475" alt="image" src="https://github.com/user-attachments/assets/bfb1ed42-65e5-46be-a9c7-985331da6d70" />
+
+### 4. Trends
+<img width="940" height="483" alt="image" src="https://github.com/user-attachments/assets/cf18c7b4-0653-4929-bf3e-4e502e192c5b" />
+
+### 5. Operations
+<img width="940" height="488" alt="image" src="https://github.com/user-attachments/assets/f809a0cf-e308-4ea2-872e-c0ea6c9c2197" />
 
 ## 💡Key results
 
