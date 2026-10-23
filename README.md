@@ -61,3 +61,40 @@ raw_registrations  ->  stg_registrations  ->  registrations_validated  ->  star 
 | 03_match_and_validate.sql | Institution matching, validation flags, duplicates, final status and reasons |
 | 04_quality_checks.sql | 	Reconciliation and quality queries |
 | 05_star_schema.sql | Dimension and fact tables for Power BI |
+
+## How a registration gets its status
+
+| Status | Assigned when |
+|---|---|
+| Rejected | Duplicate registration, institution not found, invalid email, or failed payment |
+| Needs Review | Institution name corrected by fuzzy match, type mismatch, invalid phone, incomplete name, missing location, fee not matching type, or payment pending |
+| Verified | None of the above |
+
+Institutions are matched on name and country, because the same name can exist in more than one country. The fuzzy-match threshold is a similarity of 0.85 or higher. The earliest registration is kept and later copies are marked as duplicates. Nothing is deleted, so every decision can be traced.
+
+## Data model
+
+A star schema with one fact table and six dimensions:
+fact_registrations joined to dim_date, dim_geography, dim_institution, dim_event, dim_registration_type and dim_status.
+
+## Power BI dashboard
+
+Five pages: Executive overview, Data quality, Geography, Trends and Operations. They use more than 20 DAX measures, including data quality rate, duplicate rate, verified revenue, revenue at risk, month-over-month growth and year-to-date.
+
+Executive overview Data quality Geography Trends Operations
+
+## Key results
+
+These figures come from the simulated dataset, so they describe how the data was generated, not a real organisation.
+
+| Measure | 	Result |
+|---|---|
+| Total registrations | 8,480 |
+| Verified | 	[FILL: Verified %] |
+| Needs Review | [FILL: Needs Review %] |
+| Rejected | [FILL: Rejected %] |
+| Duplicates flagged | [FILL: duplicate count] |
+| Institution names corrected by fuzzy matching | [FILL: fuzzy count] |
+| Invalid emails | [FILL: invalid email %] |
+| Most common rejection reasons | [FILL: top 3 reasons] |
+| Verified revenue (paid and verified university registrations) | [FILL: verified revenue] |
