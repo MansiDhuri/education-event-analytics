@@ -26,20 +26,20 @@ raw_registrations  ->  stg_registrations  ->  registrations_validated  ->  star 
    (untouched)          (standardised)         (matched, validated,       (1 fact +          (5 pages)
                                                 deduplicated, status)      6 dimensions)
 
-## Tech stack
+## 💻 Tech stack
 
 | Area | Tools |
 |---|---|
 | Database | SQL Server 2025 Express, T-SQL, SSMS |
 | Reporting | Power BI Desktop, DAX |
 
-## Dataset (simulated)
+## 🗂️ Dataset (simulated)
 
 - 8,480 registrations across 15 countries and 6 regions, for 7 regional events (January to July)
 - A reference table of 450 valid schools and universities
 - Errors were injected on purpose to mimic real problems. The full list is in docs/data_dictionary.md
 
-## Injected data-quality problems and handling
+## 🔍 Injected data-quality problems and handling
 
 | Injected problem | Handled by |
 |---|---|
@@ -52,7 +52,7 @@ raw_registrations  ->  stg_registrations  ->  registrations_validated  ->  star 
 | Missing city, country or region | Lookup from reference data |
 | Duplicate registrations | Window-function duplicate detection |
 
-## SQL Pipeline
+## ⚙️ SQL Pipeline
 
 | Script | What it does |
 |---|---|
@@ -62,7 +62,7 @@ raw_registrations  ->  stg_registrations  ->  registrations_validated  ->  star 
 | 04_quality_checks.sql | 	Reconciliation and quality queries |
 | 05_star_schema.sql | Dimension and fact tables for Power BI |
 
-## How a registration gets its status
+## 📋 How a registration gets its status
 
 | Status | Assigned when |
 |---|---|
@@ -72,18 +72,18 @@ raw_registrations  ->  stg_registrations  ->  registrations_validated  ->  star 
 
 Institutions are matched on name and country, because the same name can exist in more than one country. The fuzzy-match threshold is a similarity of 0.85 or higher. The earliest registration is kept and later copies are marked as duplicates. Nothing is deleted, so every decision can be traced.
 
-## Data model
+## 🗃️ Data model
 
 A star schema with one fact table and six dimensions:
 fact_registrations joined to dim_date, dim_geography, dim_institution, dim_event, dim_registration_type and dim_status.
 
-## Power BI dashboard
+## 📈 Power BI dashboard
 
 Five pages: Executive overview, Data quality, Geography, Trends and Operations. They use more than 20 DAX measures, including data quality rate, duplicate rate, verified revenue, revenue at risk, month-over-month growth and year-to-date.
 
 Executive overview Data quality Geography Trends Operations
 
-## Key results
+## 💡Key results
 
 These figures come from the simulated dataset, so they describe how the data was generated, not a real organisation.
 
@@ -98,3 +98,5 @@ These figures come from the simulated dataset, so they describe how the data was
 | Invalid emails | [FILL: invalid email %] |
 | Most common rejection reasons | [FILL: top 3 reasons] |
 | Verified revenue (paid and verified university registrations) | [FILL: verified revenue] |
+
+
