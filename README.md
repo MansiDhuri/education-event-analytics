@@ -34,7 +34,7 @@ I rebuilt that workflow with SQL Server (T-SQL) and Power BI to show how it can 
 
 - 8,480 registrations across 15 countries and 6 regions, for 7 regional events (January to July)
 - A reference table of 450 valid schools and universities
-- Errors were injected on purpose to mimic real problems. The full list is in docs/data_dictionary.md
+- Errors were injected on purpose to mimic real problems.
 
 ## 🔍 Injected data-quality problems and handling
 
