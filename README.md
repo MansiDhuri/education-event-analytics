@@ -7,7 +7,8 @@ Personal project built on simulated data. It is inspired by a registration-manag
 An education-services organisation runs regional events for school and university leaders around the world. Delegates register through two forms:
 
 - a Google Form for schools (free entry)
- a Cvent form for universities (paid entry)
+- a Cvent form for universities (paid entry)
+  
 The incoming data is messy: misspelled institution names, institutions that do not exist, invalid emails and phone numbers, inconsistent country names, and people who register more than once. Before confirmation emails go out, each registration has to be cleaned and verified. At my previous employer this was manual work.
 
 ## 🏢 What this project does
