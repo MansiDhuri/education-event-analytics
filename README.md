@@ -90,13 +90,13 @@ These figures come from the simulated dataset, so they describe how the data was
 | Measure | 	Result |
 |---|---|
 | Total registrations | 8,480 |
-| Verified | Verified 55% |
-| Needs Review | Needs Review 14% |
-| Rejected | Rejected 14% |
-| Duplicates flagged | duplicate count 585 |
-| Institution names corrected by fuzzy matching | fuzzy count 360|
-| Invalid emails |  invalid email 7.1% |
-| Verified revenue (paid and verified university registrations) | 65K verified revenue] |
+| Verified | 55% |
+| Needs Review | 14% |
+| Rejected | 14% |
+| Duplicates flagged | 585 |
+| Institution names corrected by fuzzy matching | 360|
+| Invalid emails | 7.1% |
+| Verified revenue (paid and verified university registrations) | 652K |
 
 ## 🚀 Limitations and next steps
 
