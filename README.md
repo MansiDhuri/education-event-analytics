@@ -90,14 +90,13 @@ These figures come from the simulated dataset, so they describe how the data was
 | Measure | 	Result |
 |---|---|
 | Total registrations | 8,480 |
-| Verified | 	[FILL: Verified %] |
-| Needs Review | [FILL: Needs Review %] |
-| Rejected | [FILL: Rejected %] |
-| Duplicates flagged | [FILL: duplicate count] |
-| Institution names corrected by fuzzy matching | [FILL: fuzzy count] |
-| Invalid emails | [FILL: invalid email %] |
-| Most common rejection reasons | [FILL: top 3 reasons] |
-| Verified revenue (paid and verified university registrations) | [FILL: verified revenue] |
+| Verified | Verified 55% |
+| Needs Review | Needs Review 14% |
+| Rejected | Rejected 14% |
+| Duplicates flagged | duplicate count 585 |
+| Institution names corrected by fuzzy matching | fuzzy count 360|
+| Invalid emails |  invalid email 7.1% |
+| Verified revenue (paid and verified university registrations) | 65K verified revenue] |
 
 ## 🚀 Limitations and next steps
 
@@ -112,4 +111,4 @@ T-SQL, data cleaning and validation, fuzzy matching, window functions, CTEs, vie
 
 ## 👩‍💻 About me
 
-[Mansi Dhuri]
+Mansi Dhuri
