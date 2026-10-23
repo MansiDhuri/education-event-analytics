@@ -99,4 +99,17 @@ These figures come from the simulated dataset, so they describe how the data was
 | Most common rejection reasons | [FILL: top 3 reasons] |
 | Verified revenue (paid and verified university registrations) | [FILL: verified revenue] |
 
+## 🚀 Limitations and next steps
 
+- The data is simulated, so the percentages are not real-world benchmarks.
+- Institution verification uses a reference table. A production version would use an authoritative institution database.
+- Duplicate detection can flag two different people who share a name, institution and country. In a real system these would go to review rather than be rejected.
+- Next steps: stored procedures to run the pipeline in one call, a scheduled refresh, and row-level security by region in the Power BI service.
+
+## 📚 Skills demonstrated
+
+T-SQL, data cleaning and validation, fuzzy matching, window functions, CTEs, views, dimensional modelling (star schema), Power BI, DAX, data quality reporting, documentation.
+
+## 👩‍💻 About me
+
+[FILL: Mansi Dhuri]
