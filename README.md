@@ -32,11 +32,32 @@ raw_registrations  ->  stg_registrations  ->  registrations_validated  ->  star 
 |---|---|
 | Database | SQL Server 2025 Express, T-SQL, SSMS |
 | Reporting | Power BI Desktop, DAX |
-| Scripting | Python (data generation and the optional AI review step) |
-| AI step (optional) | Claude API, with output validation and human approval |
 
 ## Dataset (simulated)
 
 - 8,480 registrations across 15 countries and 6 regions, for 7 regional events (January to July)
 - A reference table of 450 valid schools and universities
 - Errors were injected on purpose to mimic real problems. The full list is in docs/data_dictionary.md
+
+## Injected data-quality problems and handling
+
+| Injected problem | Handled by |
+|---|---|
+| Institution name typos and abbreviations | Standardisation and fuzzy matching |
+| Institutions that do not exist | Reference-table check |
+| School registered on the university form, or the reverse | Type consistency check |
+| Invalid emails (missing `@`, `test@test.com`, blank) | Pattern check and domain blocklist |
+| Invalid phone numbers | Length check per country |
+| Inconsistent country spellings (USA, US, UK, UAE) | Country mapping table |
+| Missing city, country or region | Lookup from reference data |
+| Duplicate registrations | Window-function duplicate detection |
+
+## SQL Pipeline
+
+| Script | What it does |
+|---|---|
+| 01_setup_and_profile.sql | Creates the database and raw tables, loads the CSVs, profiles the raw data |
+| 02_standardize.sql | 	Lookup tables, helper functions (clean text, proper case, Levenshtein), staging table |
+| 03_match_and_validate.sql | Institution matching, validation flags, duplicates, final status and reasons |
+| 04_quality_checks.sql | 	Reconciliation and quality queries |
+| 05_star_schema.sql | Dimension and fact tables for Power BI |
