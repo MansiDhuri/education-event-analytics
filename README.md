@@ -112,4 +112,4 @@ T-SQL, data cleaning and validation, fuzzy matching, window functions, CTEs, vie
 
 ## 👩‍💻 About me
 
-[FILL: Mansi Dhuri]
+Mansi Dhuri
