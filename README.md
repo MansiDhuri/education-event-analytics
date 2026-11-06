@@ -13,7 +13,7 @@ The incoming data is messy: misspelled institution names, institutions that do n
 
 ## 🏢 What this project does
 
-I rebuilt that workflow with SQL Server (T-SQL) and Power BI to show how it can be automated, measured and reported:
+I rebuilt that workflow with SQL Server and Power BI to show how it can be automated, measured and reported:
 
 - Loads raw registrations into SQL Server and never modifies the raw table.
 - Standardizes text, countries, phones and types in a staging table.
@@ -27,7 +27,7 @@ I rebuilt that workflow with SQL Server (T-SQL) and Power BI to show how it can 
 
 | Area | Tools |
 |---|---|
-| Database | SQL Server 2025 Express, T-SQL, SSMS |
+| Database | SQL Server 2025 Express, SSMS |
 | Reporting | Power BI Desktop, DAX |
 
 ## 🗂️ Dataset (simulated)
@@ -119,7 +119,7 @@ These figures come from the simulated dataset, so they describe how the data was
 
 ## 📚 Skills demonstrated
 
-T-SQL, data cleaning and validation, fuzzy matching, window functions, CTEs, views, dimensional modelling (star schema), Power BI, DAX, data quality reporting, documentation.
+SQL, data cleaning and validation, fuzzy matching, window functions, CTEs, views, dimensional modelling (star schema), Power BI, DAX, data quality reporting, documentation.
 
 ## 👩‍💻 About me
 
