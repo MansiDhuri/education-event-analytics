@@ -81,19 +81,20 @@ Five pages: Executive overview, Data quality, Geography, Trends and Operations. 
 Executive overview Data quality Geography Trends Operations
 
 ### 1. Education Event Overview
-<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/958d798c-e399-43c3-bd1c-6f1ee9225f1b" />
+<img width="602" height="346" alt="image" src="https://github.com/user-attachments/assets/ee85c454-440d-4f50-a37d-e2c0ea2f359a" />
 
 ### 2. Data Quality
-<img width="940" height="469" alt="image" src="https://github.com/user-attachments/assets/660cb661-1a8c-416c-bf17-601d8b714ceb" />
+<img width="602" height="356" alt="image" src="https://github.com/user-attachments/assets/c11f03eb-a7b7-48ab-b22f-1a01e074abc4" />
 
 ### 3. Geography
-<img width="940" height="475" alt="image" src="https://github.com/user-attachments/assets/bfb1ed42-65e5-46be-a9c7-985331da6d70" />
+<img width="602" height="351" alt="image" src="https://github.com/user-attachments/assets/14e5bb4f-7da0-4469-a608-027f3c750bb4" />
 
 ### 4. Trends
-<img width="940" height="483" alt="image" src="https://github.com/user-attachments/assets/cf18c7b4-0653-4929-bf3e-4e502e192c5b" />
+<img width="602" height="361" alt="image" src="https://github.com/user-attachments/assets/7b5e52c6-be38-499a-8f1e-9dced52ec02c" />
 
 ### 5. Operations
-<img width="940" height="488" alt="image" src="https://github.com/user-attachments/assets/f809a0cf-e308-4ea2-872e-c0ea6c9c2197" />
+<img width="602" height="349" alt="image" src="https://github.com/user-attachments/assets/7753b4e4-3bda-42d1-90f1-83d9b52b39c9" />
+
 
 ## 💡Key results
 
